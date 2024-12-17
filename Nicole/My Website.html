@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who I Am?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1, h2, h3 {
+      font-family: 'Quicksand', sans-serif;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 60px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 2.2em;
+      color: #6a5acd;
+      text-align: center;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #555;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .text-container {
+      margin-top: 30px;
+    }
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s, transform 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #2980b9;
+      transform: translateY(-5px);
+    }
+    .intro-section {
+      background-color: #fff;
+      padding: 40px;
+      margin-top: 50px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 50px auto;
+      text-align: left;
+    }
+    .intro-section h2 {
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+    .features-section {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      max-width: 1000px;
+      margin: 50px auto;
+    }
+    .feature-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+    .feature-item:last-child {
+      margin-bottom: 0;
+    }
+    .feature-item h3 {
+      font-size: 1.6em;
+      color: #3498db;
+      font-weight: 500;
+    }
+    .feature-item p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 700px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 1.1em;
+      margin-top: 60px;
+      border-top: 3px solid #3498db;
+    }
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .container img {
+      border: 6px solid #3498db;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .about-me {
+      display: none;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 50px auto;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .intro-section, .features-section {
+        padding: 30px;
+      }
+      .btn {
+        padding: 12px 30px;
+        font-size: 1.1em;
+      }
+      .photo {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="My Photo.jpg" alt="Justine's photo" class="photo">
+    <div class="text-container">
+      <h1>Justine Nicole Ajeda</h1>
+      <p>A simple girl living in Rosario</p>
+      <h2>Want to know me more?</h2>
+      <button class="btn" onclick="showAboutMe()">About Me</button>
+    </div>
+  </div>
+
+  <!-- About Me Section (initially hidden) -->
+  <div id="about-me" class="about-me">
+    <h2>Who I Am?</h2>
+    <p>Hi! I’m Justine Nicole Ajeda, an 18-year-old girl from Rosario. I’m the middle child in my family, and I love exploring new cuisines—eating is one of my favorite hobbies. My favorite color is purple, and I find lavender flowers particularly fascinating. Academically, I am driven and strive to achieve the best, which is why I am also honored to be the president of my class.</p>
+    <p>Outside of academics, I enjoy reading, photography, and cherishing moments with my family and friends. I dream of making a positive impact on the world, step by step, through the things I love and care about.</p>
+  </div>
+
+  <div class="features-section">
+    <h2>Contact Information</h2>
+    <div class="feature-item">
+      <h3>Facebook Account</h3>
+      <p>Justine Nicole Ajeda</p>
+    </div>
+    <div class="feature-item">
+      <h3>Contact Number</h3>
+      <p>09319511173</p>
+    </div>
+    <div class="feature-item">
+      <h3>Instagram Account</h3>
+      <p>Nicole Ajeda</p>   
+    </div>
+    <div class="feature-item">
+      <h3>Email</h3>
+      <p>nicoleajeda35@gmail.com</p>
+    </div>
+    <div class="feature-item">
+      <h3>Hobbies</h3>
+      <p>Reading, Listening to Music, Eating, Sleeping</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Justine Nicole Ajeda. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to show the About Me section when the button is clicked
+    function showAboutMe() {
+      var aboutSection = document.getElementById("about-me");
+      aboutSection.style.display = aboutSection.style.display === "none" || aboutSection.style.display === "" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
+   
